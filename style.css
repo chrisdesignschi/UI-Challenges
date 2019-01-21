@@ -476,6 +476,19 @@ footer {
 	display:block;
 }
 
+.sub-gallery-item-container {
+	display:block;
+	padding-right:5px;
+	height:auto;
+	overflow-y:scroll;
+}
+
+.sub-gallery-container {
+	display:block;
+	width:90%;
+	margin:auto;
+}
+
 	.navbar-item {
 		width:60px;
 		font-size:12px;
