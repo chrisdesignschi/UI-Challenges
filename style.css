@@ -145,6 +145,7 @@ main {
 	grid-gap:5px;
 	overflow-x:scroll;
 	overflow-y:hidden;
+	padding-bottom:5px;
 }
 
 .gallery-item {
