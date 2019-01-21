@@ -1,0 +1,339 @@
+<!doctype HTML>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script src="https://use.fontawesome.com/f90f1518e8.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<!-- navbar starts here -->
+
+<div class="nav">
+
+	<img src="https://i.imgur.com/Fk7uRin.png" draggable="false" width="180px" height="auto" alt="logo">
+
+	<ul class="navbar">
+		<a href=""><li class="navbar-item">Home
+		</li></a>
+
+		<a href=""><li class="navbar-item">Blog
+		</li></a>
+
+		<a href="" id="show"><li class="navbar-item navbar-select"><span style="color:#191a24">Portfolio</span>
+			<ul class="nav-bar-drop">
+				<a href=""><li class="drop-bear">Opioid Crisis</li></a>
+				<a href=""><li class="drop-bear">UI Challenges</li></a>
+				<a href=""><li class="drop-bear">Bulletin</li></a>
+				<a href=""><li class="drop-bear">Web Redesign</li></a>
+				<a href=""><li class="drop-bear">Lead Poisoning Prevention</li></a>
+			</ul>
+		</li></a>
+
+		<a href=""><li class="navbar-item">About
+		</li></a>
+		
+	</ul>
+
+</div>
+<!-- navbar ends here -->
+
+<body>
+<main>
+<!-- 	<div class="banner">
+		<h2>Weekly UI Challenges</h2>
+		<p>Interaction + Animation</p>
+	</div> -->
+
+	<div class="main-container">
+
+	<div class="main-description">
+		<h2>Weekly UI Challenges</h2>
+		<p class="tags">#UIUX #motion #challenge</p>
+		<p>UI designers create every aspect of the interfaces we know — we challenged ourselves to learn as many as we could, and endeavored to have fun doing it.</p>
+		<p style="color:#e8af00">Click a thumbnail to view entries!</p>
+	</div>
+
+	<div class="main-gallery">
+
+		<div class="gallery-item" id="gallery-5" onclick="openGallery('alarm')">
+			<h2>Alarm Clock</h2>
+		</div>
+
+		<div class="gallery-item" id="gallery-3" onclick="openGallery('loading')">
+		<h2>Loading Bar</h2>
+		</div>
+
+		<div class="gallery-item" id="gallery-4" onclick="openGallery('profile')">
+			<h2>Profile Page</h2>
+		</div>
+
+		<div class="gallery-item" id="gallery-2" onclick="openGallery('weather')">
+			<h2>Weather App</h2>
+		</div>
+		
+	</div>
+</div>
+
+<!-- Gallery description begins here -->
+
+<script>
+function openGallery(galleryName) {
+  var i;
+  var x = document.getElementsByClassName("sub-gallery");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(galleryName).style.display = "block";  
+}
+</script>
+
+<script>
+function openAlarm(alarmName) {
+  var i;
+  var x = document.getElementsByClassName("sub-gallery-item-desc");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(alarmName).style.display = "block";  
+}
+</script>
+
+<script>
+function openLoad(loadName) {
+  var i;
+  var x = document.getElementsByClassName("sub-gallery-item-desc");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(loadName).style.display = "block";  
+}
+</script>
+
+<script>
+function openProfile(profileName) {
+  var i;
+  var x = document.getElementsByClassName("sub-gallery-item-desc");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(profileName).style.display = "block";  
+}
+</script>
+
+<script>
+function openWeather(weatherName) {
+  var i;
+  var x = document.getElementsByClassName("sub-gallery-item-desc");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(weatherName).style.display = "block";  
+}
+</script>
+
+
+<!-- Alarms
+ -->
+<div class="sub-gallery" id="alarm">
+
+	<div class="sub-gallery-banner">
+	<h2 class="sub-gallery-h2">Alarm Clock</h2>
+	<p class="sub-gallery-p">Have you ever wondered what goes into making one so easy to use every morning?</p>
+	</div>
+
+	<div class="sub-gallery-container">
+		<div class="sub-gallery-item-container">
+			<div class="sub-gallery-item asub1" onclick="openAlarm('asub1')"></div>
+			<div class="sub-gallery-item asub2" onclick="openAlarm('asub2')"></div>
+			<div class="sub-gallery-item asub3" onclick="openAlarm('asub3')"></div>
+			<div class="sub-gallery-item asub4" onclick="openAlarm('asub4')"></div>
+		</div>
+
+		<div class="sub-gallery-item-desc" id="asub1" style="display:block">
+			<h2>Chris Zhu</h2>
+			<img src="https://i.imgur.com/AIqSH4e.gif" width="50%" height="auto" alt="image">
+		</div>
+
+		<div class="sub-gallery-item-desc" id="asub2">
+			<h2>Yunhao Song</h2>
+			<img src="https://i.imgur.com/eh7mX2a.png" width="50%" height="auto" alt="image">
+		</div>
+
+		<div class="sub-gallery-item-desc" id="asub3">
+			<h2>Tisha Auguste</h2>
+			<img src="https://i.imgur.com/ecblfzr.png" width="50%" height="auto" alt="image">
+		</div>
+
+		<div class="sub-gallery-item-desc" id="asub4">
+			<h2>Raven Mo</h2>
+			<img src="https://i.imgur.com/4YfZRHS.png" width="100%" height="auto" alt="image">
+		</div>
+	</div>
+</div>
+
+<!-- Loading
+ -->
+
+<div class="sub-gallery" id="loading">
+
+	<div class="sub-gallery-banner">
+	<h2 class="sub-gallery-h2">Loading Bar</h2>
+	<p class="sub-gallery-p">Loading bars are a fun way to make a technically necessary element engaging.</p>
+	</div>
+
+	<div class="sub-gallery-container">
+		<div class="sub-gallery-item-container">
+			<div onclick="openLoad('lsub1')" class="sub-gallery-item lsub1 ls"></div>
+			<div onclick="openLoad('lsub2')" class="sub-gallery-item lsub2 ls"></div>
+			<div onclick="openLoad('lsub3')" class="sub-gallery-item lsub3 ls"></div>
+			<div onclick="openLoad('lsub4')" class="sub-gallery-item lsub4 ls"></div>
+			<div onclick="openLoad('lsub6')" class="sub-gallery-item lsub6 ls"></div>
+			<div onclick="openLoad('lsub7')" class="sub-gallery-item lsub7 ls"></div>
+		</div>
+
+		<div class="sub-gallery-item-desc" id="lsub1" style="display:block">
+			<h2>Cat Cao</h2>
+			<img src="https://i.imgur.com/L4F2AZg.gif" width="100%" height="auto" alt="image">
+		</div>
+
+		<div class="sub-gallery-item-desc" id="lsub2">
+			<h2>Raven Mo</h2>
+			<img src="https://i.imgur.com/B6ra8HA.png" width="50%" height="auto" alt="image">
+		</div>
+
+		<div class="sub-gallery-item-desc" id="lsub3">
+			<h2>Chris Zhu</h2>
+			<img src="https://i.imgur.com/l7dpwTg.gif" width="100%" height="auto" alt="image">
+		</div>
+
+		<div class="sub-gallery-item-desc" id="lsub4">
+			<h2>Jimmy Woo</h2>
+			<img src="https://i.imgur.com/pxsmQyR.png" width="100%" height="auto" alt="image">
+		</div>
+
+		<div class="sub-gallery-item-desc" id="lsub6">
+			<h2>Alison Kim</h2>
+			<img src="https://i.imgur.com/MXYyvrc.gif" width="50%" height="auto" alt="image">
+		</div>
+
+		<div class="sub-gallery-item-desc" id="lsub7">
+			<h2>Bao Luong</h2>
+			<img src="https://i.imgur.com/YhA3L8x.jpg" width="100%" height="auto" alt="image">
+		</div>
+	</div>
+</div>
+
+<!-- Weather
+ -->
+ 
+<div class="sub-gallery" id="weather">
+
+	<div class="sub-gallery-banner">
+	<h2 class="sub-gallery-h2">Weather App</h2>
+	<p class="sub-gallery-p">With a limited screen real-estate, weather apps need to be both compact but full of information — when taking visual considerations, this becomes a challenge.</p>
+	</div>
+
+	<div class="sub-gallery-container">
+		<div class="sub-gallery-item-container">
+			<div class="sub-gallery-item wsub1" onclick="openWeather('wsub1')"></div>
+			<div class="sub-gallery-item wsub2" onclick="openWeather('wsub2')"></div>
+			<div class="sub-gallery-item wsub3" onclick="openWeather('wsub3')"></div>
+			<div class="sub-gallery-item wsub4" onclick="openWeather('wsub4')"></div>
+		</div>
+
+		<div class="sub-gallery-item-desc" id="wsub1" style="display:block">
+			<h2>Tisha Auguste</h2>
+			<img src="https://i.imgur.com/eUPqkUt.gif" width="50%" height="auto" alt="image">
+		</div>
+
+		<div class="sub-gallery-item-desc" id="wsub2">
+			<h2>Raven Mo</h2>
+			<img src="https://i.imgur.com/ffSQcQs.png" width="100%" height="auto" alt="image">
+		</div>
+		
+		<div class="sub-gallery-item-desc" id="wsub3">
+			<h2>Alison Kim</h2>
+			<img src="https://i.imgur.com/U0SPTSu.png" width="50%" height="auto" alt="image">
+		</div>
+		
+		<div class="sub-gallery-item-desc" id="wsub4">
+			<h2>Cat Cao</h2>
+			<img src="https://i.imgur.com/m1i9PfE.jpg" width="100%" height="auto" alt="image">
+		</div>
+		
+	</div>
+</div>
+
+<!-- Profile
+ -->
+ 
+<div class="sub-gallery" id="profile">
+
+	<div class="sub-gallery-banner">
+	<h2 class="sub-gallery-h2">Profile Page</h2>
+	<p class="sub-gallery-p">Part of making a valuable user-experience is including the user — many products engage users and gdisplay important data via profile pages.</p>
+	</div>
+
+	<div class="sub-gallery-container">
+		<div class="sub-gallery-item-container">
+			<div onclick="openWeather('psub1')" class="sub-gallery-item psub1" style="display:block"></div>
+			<div onclick="openWeather('psub8')" class="sub-gallery-item psub8"></div>
+			<div onclick="openWeather('psub2')" class="sub-gallery-item psub2"></div>
+			<div onclick="openWeather('psub3')" class="sub-gallery-item psub3"></div>
+			<div onclick="openWeather('psub4')" class="sub-gallery-item psub4"></div>
+			<div onclick="openWeather('psub5')" class="sub-gallery-item psub5"></div>
+			<div onclick="openWeather('psub6')" class="sub-gallery-item psub6"></div>
+			<div onclick="openWeather('psub7')" class="sub-gallery-item psub7"></div>
+
+		</div>
+
+		<div class="sub-gallery-item-desc" id="psub1" style="display:block">
+			<h2>Raven Mo</h2>
+			<img src="https://i.imgur.com/TXXZwSV.jpg" width="100%" height="auto" alt="image">
+		</div>
+
+		<div class="sub-gallery-item-desc" id="psub8">
+			<h2>Yunhao Song</h2>
+			<img src="https://i.imgur.com/MC0TAT0.gif" width="100%" height="auto" alt="image">
+		</div>
+
+		<div class="sub-gallery-item-desc" id="psub2">
+			<h2>Alison Kim</h2>
+			<img src="https://i.imgur.com/HdZL4aw.jpg" width="50%" height="auto" alt="image">
+		</div>
+
+		<div class="sub-gallery-item-desc" id="psub3">
+			<h2>Audrey Scharrer</h2>
+			<img src="https://i.imgur.com/dS6ca41.jpg" width="50%" height="auto" alt="image">
+		</div>
+
+		<div class="sub-gallery-item-desc" id="psub4">
+			<h2>Nagomu Kikuchi</h2>
+			<img src="https://i.imgur.com/ZsPYPYH.jpg" width="100%" height="auto" alt="image">
+		</div>
+
+		<div class="sub-gallery-item-desc" id="psub5">
+			<h2>Raven Mo</h2>
+			<img src="https://i.imgur.com/YSUTaw8.jpg" width="100%" height="auto" alt="image">
+		</div>
+
+		<div class="sub-gallery-item-desc" id="psub6">
+			<h2>Tisha Auguste</h2>
+			<img src="https://i.imgur.com/bz3wFPc.jpg" width="100%" height="auto" alt="image">
+		</div>
+
+		<div class="sub-gallery-item-desc" id="psub7">
+			<h2>Ryan Jung</h2>
+			<img src="https://i.imgur.com/jsKkVVz.png" width="50%" height="auto" alt="image">
+		</div>
+	</div>
+</div>
+
+</main>
+
+<footer>
+	Artists on the World Wide Web 2019
+</footer>
+
+<!-- new one -->

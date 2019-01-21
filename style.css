@@ -1,0 +1,491 @@
+body {
+	background-color:#191A24;
+	font-family:Chicago;
+}
+
+.nav {
+	text-align:center;
+	margin-top:30px;
+}
+
+h2 {
+	margin:0px;
+}
+
+.nav img {
+	margin:auto;
+}
+
+.navbar {
+	list-style:none;
+	color:#fff;
+	position:relative;
+	margin-bottom:28px;
+}
+
+.nav-item {
+	display:inline-block;
+}
+
+.navbar-drop {
+	display:none;
+}
+
+.nav-item:hover .navbar-drop {
+	display:block;
+}
+
+.navbar-drop {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+.navbar-item {
+	position:relative;
+	text-align: center;
+	width:160px;
+	padding:12px 0 12px 0;
+	display:inline-block;
+	font-size:14px;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.navbar-item:hover {
+	background-color:#E8AF00;
+	color:#191A24;
+}
+
+.navbar-item a, .navbar a {
+	color:#fff;
+	text-decoration: none;
+}
+
+.navbar-select {
+	background-color:#E8AF00;
+	color:#191a24 !important;
+}
+
+.navbar-item:hover .nav-bar-drop {
+	display:block;
+}
+
+.nav-bar-drop {
+	margin-top:9px;
+	width:160px;
+	z-index: 100;
+	position:relative;
+	display:none;
+	text-align:center;
+	padding:0px 0 5px 0;
+	list-style:none;
+	position:absolute;
+}
+
+.drop-bear {
+	z-index: 1000;
+	background-color:#2C2E3F;
+	margin-top:-10px;
+	padding:12px 0 12px 0;
+	border-top:1px solid #191A24;
+}
+
+.drop-bear:hover {
+	background-color:#e8af00;
+	color:#191a24;
+}
+
+.nav-bar-drop a {
+	display:block;
+	font-size:12px;
+	padding:5px 0 5px 0;
+}
+
+main {
+	margin:auto;
+	width:80%;
+	border-top:1px solid #E8AF00;
+	max-width:1500px;
+}
+
+.banner {
+	padding:30px 0 30px 0;
+	width:100%;
+	background-color:black;
+	background-position:left;
+	background-size:cover;
+	text-align:center;
+}
+
+.banner h2 {
+	font-size:40px;
+	margin-bottom:5px;
+	text-transform: uppercase;
+	color:#E8AF00;
+}
+
+.banner p {
+	margin:0px;
+	font-size:17px;
+	color:#fff;
+}
+
+.main-container {
+	margin-top:50px;
+	display:grid;
+	grid-template-columns: 1fr 3fr;
+	grid-gap:20px;
+}
+
+.main-gallery {
+	cursor:pointer;
+	display:grid;
+	grid-template-columns: repeat(99, 1fr);
+	grid-gap:5px;
+	overflow-x:scroll;
+	overflow-y:hidden;
+}
+
+.gallery-item {
+	background-color:green;
+	display:inline-block;
+	width:270px;
+	height:270px;
+	text-align:center;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+.gallery-item:hover {
+	-webkit-transform: translateY(14px);
+	transform: translateY(14px);
+}
+
+.gallery-item h2 {
+	padding:3px 0 3px 0;
+	text-transform: uppercase;
+	margin-bottom:0px;
+	background-color:rgba(232, 175, 0, 0.8);
+	color:#191A24;
+}
+
+.gallery-item p {
+	margin: 80px 0 0 8px;
+	font-size:20px;
+	display:none;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #2C2E3F; 
+}
+
+::-webkit-scrollbar-thumb {
+	background: #E8AF00; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #EE6EAF; 
+}
+
+.main-description {
+	align-self:center;
+}
+
+.main-description h2 {
+	text-align:left;
+	color:#E8AF00;
+	font-size:25px;
+}
+
+.main-description p {
+	font-size:12px;
+	color:#fff;
+}
+
+.tags {
+	color:#ee6eaf !important;
+}
+
+#gallery-1 {
+	background:url(https://i.imgur.com/HDUBNne.jpg);
+	background-size:cover;
+}
+
+#gallery-2 {
+	background:url(https://i.imgur.com/xQIhTAS.jpg);
+	background-size:cover;
+}
+
+#gallery-3 {
+	background:url(https://i.imgur.com/V4DeSWq.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:#FAAA61;
+}
+
+#gallery-4 {
+	background:url(https://i.imgur.com/986tMo0.jpg);
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+#gallery-5 {
+	background:url(https://i.imgur.com/QOvDwqh.jpg);
+	background-size:cover;
+}
+
+#gallery-6 {
+	background:url(https://i.imgur.com/LJq6DtY.jpg);
+	background-size:cover;
+}
+
+.sub-gallery {
+	background-color:#2C2E3F;
+	margin-top:50px;
+	display:none;
+	padding-bottom:40px;
+}
+
+/* complicated gallery stuff starts here */
+
+.sub-gallery-banner {
+	padding:30px 0px 30px 0px;
+	width:90%;
+	margin:auto;
+	display: grid;
+	grid-column-gap: 20px;
+	grid-template-columns: 1fr 1fr;
+	border-bottom:1px solid #E8AF00;
+}
+.sub-gallery-p {
+	margin:0px;
+	color:#fff;
+}
+.sub-gallery-h2 {
+	text-transform: uppercase;
+	font-size:35px;
+	color:#E8AF00;
+}
+.sub-gallery-container {
+	margin-top:30px !important;
+	grid-template-columns: 0.5fr 0.5fr;
+	display:grid;
+	grid-column-gap: 20px;
+	width:90%;
+	margin:auto;
+}
+
+.sub-gallery-item-container {
+	display:grid;
+	padding-right:5px;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+	height:500px;
+	overflow-y:scroll;
+}
+
+.sub-gallery-item {
+	background-color:#000;
+	height:300px !important;
+	background-position:center;
+}
+
+.sub-gallery-item-desc h2 {
+	color:#E8AF00;
+	font-size:30px;
+	margin-bottom:10px;
+	text-align:center;
+}
+
+.sub-gallery-item-desc {
+	text-align:center;
+	display:none;
+}
+
+/* gallery images */
+
+.asub1 {
+	background:url(https://i.imgur.com/QOvDwqh.jpg);
+	background-size:cover;
+	background-position:center;
+	height:100%;
+}
+
+.asub2 {
+	background:url(https://i.imgur.com/eh7mX2a.png);
+	background-size:cover;
+	height:100%;
+}
+
+.asub3 {
+	background:url(https://i.imgur.com/ecblfzr.png);
+	background-size:cover;
+	height:100%;
+}
+
+.asub4 {
+	background:url(https://i.imgur.com/4YfZRHS.png);
+	background-size:cover;
+	background-position:center;
+	height:100%;
+}
+
+.lsub1 {
+	background:url(https://i.imgur.com/L4F2AZg.gif);
+	background-size:cover;
+	background-position:center;
+	height:100%;
+}
+.lsub2 {
+	background:url(https://i.imgur.com/B6ra8HA.png);
+	background-size:cover;
+	background-position:center;
+	height:100%;
+}
+.lsub3 {
+	background:url(https://i.imgur.com/l7dpwTg.gif);
+	background-size:cover;
+	background-position:center;
+	height:100%;
+}
+.lsub4 {
+	background:url(https://i.imgur.com/pxsmQyR.png);
+	background-size:cover;
+	background-position:center;
+	height:100%;
+}
+.lsub5 {
+	background:url(https://i.imgur.com/4YfZRHS.png);
+	background-size:cover;
+	background-position:center;
+	height:100%;
+}
+.lsub6 {
+	background:url(https://i.imgur.com/MXYyvrc.gif);
+	background-size:cover;
+	background-position:center;
+	height:100%;
+}
+.lsub7 {
+	background:url(https://i.imgur.com/YhA3L8x.jpg);
+	background-size:cover;
+	background-position:center;
+	height:100%;
+}
+
+.wsub1 {
+	background:url(https://i.imgur.com/8eRco1G.png);
+	background-size:cover;
+	background-position:center;
+	height:100%;
+}
+.wsub2 {
+	background:url(https://i.imgur.com/ffSQcQs.png);
+	background-size:cover;
+	background-position:center;
+	height:100%;
+}
+.wsub3 {
+	background:url(https://i.imgur.com/U0SPTSu.png);
+	background-size:cover;
+	background-position:center;
+	height:100%;
+}
+.wsub4 {
+	background:url(https://i.imgur.com/m1i9PfE.jpg);
+	background-size:cover;
+	background-position:center;
+	height:100%;
+}
+
+.psub1 {
+	background:url(https://i.imgur.com/TXXZwSV.jpg);
+	background-size:cover;
+	background-position:center;
+	height:100%;
+}
+.psub2 {
+	background:url(https://i.imgur.com/HdZL4aw.jpg);
+	background-size:cover;
+	background-position:center;
+	height:100%;
+}
+.psub3 {
+	background:url(https://i.imgur.com/dS6ca41.jpg);
+	background-size:cover;
+	background-position:center;
+	height:100%;
+}
+.psub4 {
+	background:url(https://i.imgur.com/ZsPYPYH.jpg);
+	background-size:cover;
+	background-position:center;
+	height:100%;
+}
+.psub5 {
+	background:url(https://i.imgur.com/YSUTaw8.jpg);
+	background-size:cover;
+	background-position:center;
+	height:100%;
+}
+.psub6 {
+	background:url(https://i.imgur.com/bz3wFPc.jpg);
+	background-size:cover;
+	background-position:center;
+	height:100%;
+}
+.psub7 {
+	background:url(https://i.imgur.com/jsKkVVz.png);
+	background-size:cover;
+	background-position:center;
+	height:100%;
+}
+.psub8 {
+	background:url(https://i.imgur.com/vzz0JdF.jpg);
+	background-size:cover;
+	background-position:center;
+	height:100%;
+}
+
+/* all images https://imgur.com/a/UW3utvD */
+
+footer {
+	text-align:center;
+	color:#2C2E3F;
+	margin-top:50px;
+	margin-bottom:50px;
+
+}
+
+@media (max-width:800px), screen and (orientation: portrait) {
+
+	.main-container {
+	display:block;
+}
+
+	.navbar-item {
+		width:60px;
+		font-size:12px;
+	}
+
+	.sub-gallery-item-container {
+	display:block;
+	}
+
+	.sub-gallery-item {
+	height:30px;
+	}
+}
