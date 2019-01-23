@@ -56,11 +56,15 @@ h2 {
 	font-size:14px;
 	margin-left:10px;
 	margin-right:10px;
+	-webkit-transition:0.2s;
+	transition:0.2s;
 }
 
 .navbar-item:hover {
 	background-color:#E8AF00;
 	color:#191A24;
+	-webkit-transition:0.2s;
+	transition:0.2s;
 }
 
 .navbar-item a, .navbar a {
