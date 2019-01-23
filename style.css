@@ -1,11 +1,11 @@
 body {
 	background-color:#191A24;
-	font-family:Chicago;
+	font-family:Chicago, Helvetica, sans-serif;
 }
 
 @font-face {
   font-family: Chicago;
-  src: url(chicago_medium.ttf);
+  src: url(Chicago.ttf) format("truetype");
 }
 
 
